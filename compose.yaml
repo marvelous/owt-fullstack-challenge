@@ -1,0 +1,9 @@
+services:
+  backend:
+    build: backend
+    volumes:
+    - ./backend:/var/backend:Z
+  frontend:
+    build: frontend
+    ports:
+    - 8080:80
